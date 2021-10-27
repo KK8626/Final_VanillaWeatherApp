@@ -20,7 +20,7 @@
         <div class="weather-app">
           <div class="row">
             <div class="col-9">
-              <h1>Enter a city</h1>
+              <h2>Enter a city</h2>
             </div>
             <div class="col-3">
               <button class="btn btn-primary">Search</button>
@@ -29,11 +29,14 @@
               <h1>Braunschweig</h1>
             </div>
             <div class="col-6">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-                alt="Cloudy"
-              />
-              <span><strong>14</strong>° C</span>
+              <div class="clearfix weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+                  alt="Cloudy"
+                  class="float-left"
+                />
+                <span><strong>14</strong><span class="units">°C</span></span>
+              </div>
             </div>
             <ul>
               <li>Wednesday, 16:22</li>
