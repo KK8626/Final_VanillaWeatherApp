@@ -10,7 +10,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -26,7 +26,7 @@
               <button class="btn btn-primary">Search</button>
             </div>
             <div class="col-6">
-              <h1>Braunschweig</h1>
+              <h1 id="city"></h1>
             </div>
             <div class="col-6">
               <div class="clearfix weather-temperature">
@@ -35,12 +35,18 @@
                   alt="Cloudy"
                   class="float-left"
                 />
-                <span><strong>14</strong><span class="units">°C</span></span>
+                <span
+                  ><strong id="temperature"></strong
+                  ><span class="units">°C</span></span
+                >
               </div>
             </div>
             <ul>
               <li>Wednesday, 16:22</li>
-              <li>Precipitation: 0%, Wind: 10 km/h</li>
+              <li>
+                Humidity: <span id="humidity"></span> %, Wind:
+                <span id="wind"></span> km/h
+              </li>
             </ul>
           </div>
         </div>
