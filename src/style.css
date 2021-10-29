@@ -44,3 +44,7 @@ ul {
   top: -22px;
   color: rgb(112, 117, 122);
 }
+
+.description {
+  text-transform: capitalize;
+}
