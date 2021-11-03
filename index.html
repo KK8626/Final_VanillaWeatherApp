@@ -18,25 +18,28 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <div class="container">
-            <div class="row">
-              <div class="col-9">
-                <form>
-                  <div class="form-group">
-                    <input
-                      type="search"
-                      class="form-control"
-                      class="mb-3"
-                      id="search-form"
-                      aria-describedby="emailHelp"
-                      placeholder="Enter a city"
-                    />
-                  </div>
-                </form>
-              </div>
-              <div class="col-3">
-                <button type="submit" value="Search" class="btn btn-primary w-100" >Search</button>
-              </div>
+          <div class="row">
+            <div class="col-9">
+              <form id="search-form" class="mb-3">
+                <div class="form-group">
+                  <input
+                    type="search"
+                    class="form-control"
+                    id="city-input"
+                    placeholder="Enter a city"
+                    autocomplete="off"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="col-3">
+              <button
+                type="submit"
+                value="Search"
+                class="btn btn-primary w-100"
+              >
+                Search
+              </button>
             </div>
           </div>
           <h1 id="city"></h1>
