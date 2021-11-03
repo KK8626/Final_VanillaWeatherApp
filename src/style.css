@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 16px;
   margin-top: 26px;
@@ -29,14 +29,13 @@ ul {
   height: 64px;
   width: 64px;
   margin-top: 0px;
-  margin-left: 30px;
   vertical-align: top;
+  padding: 0px;
 }
 .weather-temperature strong {
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 60px;
-  margin-left: 25px;
 }
 
 .units {
