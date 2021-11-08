@@ -55,7 +55,31 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+    `
+    <div class="col-2">
+      <div class="weather-forecast-date">Tue</div>
+      <img
+        class="weather-forecast-icon"
+        src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+        alt=""
+        width="42"
+      />
+      <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temp-max">18°</span>
+        <span class="weather-forecast-temp-min">12°</span>
+      </div>
+    </div>`;
+  forecastHtML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 search("Berlin");
+displayForecast();
