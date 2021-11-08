@@ -41,7 +41,7 @@ ul {
 .weather-temperature strong {
   font-size: 44px;
   line-height: 60px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .units {
