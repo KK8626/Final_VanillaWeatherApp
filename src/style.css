@@ -48,3 +48,26 @@ ul {
 .description {
   text-transform: capitalize;
 }
+
+.weather-forecast {
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+}
+.weather-forecast-icon {
+  height: 50px;
+  width: 50px;
+}
+.weather-forecast-temperatures {
+  font-size: 14px;
+}
+.weather-forecast-temp-max {
+  font-weight: bold;
+}
+.weather-forecast-temp-min {
+  opacity: 0.6;
+}
