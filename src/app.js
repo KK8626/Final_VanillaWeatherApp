@@ -61,9 +61,11 @@ function displayForecast(response) {
              )}° </span>
             </div>
           </div>
-        `;
+      `;
     }
   });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function getForecast(coordinates) {
