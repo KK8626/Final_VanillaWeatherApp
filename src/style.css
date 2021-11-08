@@ -4,7 +4,7 @@ body {
 
 h1 {
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 750;
   line-height: 16px;
   margin-top: 26px;
   margin-bottom: 20px;
@@ -13,7 +13,7 @@ h1 {
 ul {
   color: rgb(112, 117, 122);
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   list-style-type: none;
@@ -23,31 +23,40 @@ ul {
   margin-bottom: 0;
 }
 
+small {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .weather-app-wrapper {
   border: 1px solid rgb(112, 117, 122);
   border-radius: 10px;
-  max-width: 510px;
+  max-width: 600px;
   margin: 30px auto;
   padding: 20px;
 }
 .weather-temperature img {
-  font-weight: 400;
   height: 64px;
   width: 64px;
   margin-top: 0px;
   vertical-align: top;
   padding: 0px;
+  display: inline-block;
 }
 .weather-temperature strong {
-  font-size: 44px;
+  font-size: 60px;
   line-height: 60px;
-  font-weight: bold;
+  font-weight: 750;
+  display: inline-block;
 }
 
 .units {
   position: relative;
   font-size: 16px;
-  top: -18px;
+  top: -30px;
   font-weight: bold;
 }
 
