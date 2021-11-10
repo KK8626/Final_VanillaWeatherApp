@@ -1,11 +1,17 @@
 body {
   font-family: arial, sans-serif;
+  background: linear-gradient(
+    89.9deg,
+    rgb(208, 246, 255) 0.1%,
+    rgb(255, 237, 237) 47.9%,
+    rgb(255, 255, 231) 100.2%
+  );
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 750;
-  line-height: 16px;
+  line-height: 20px;
   margin-top: 26px;
   margin-bottom: 20px;
 }
@@ -15,7 +21,7 @@ ul {
   box-sizing: border-box;
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 20px;
   list-style-type: none;
   text-align: left;
   padding: 0;
@@ -24,20 +30,39 @@ ul {
 }
 
 small {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .weather-app-wrapper {
-  border: 1px solid rgb(112, 117, 122);
+  border: 1px solid #bfe1e8;
   border-radius: 10px;
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
+  background: #fffafa;
 }
+
+.form-group {
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  background-color: #bfe1e8;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+}
+.btn:hover {
+  background: #a1c2c9;
+}
+
 .weather-temperature img {
   height: 64px;
   width: 64px;
@@ -47,16 +72,16 @@ a {
   display: inline-block;
 }
 .weather-temperature strong {
-  font-size: 60px;
+  font-size: 50px;
   line-height: 60px;
-  font-weight: 750;
+  font-weight: 700;
   display: inline-block;
 }
 
 .units {
   position: relative;
   font-size: 16px;
-  top: -30px;
+  top: -23px;
   font-weight: bold;
 }
 
@@ -66,12 +91,12 @@ a {
 
 .weather-forecast {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
   color: black;
 }
 
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 14px;
 }
 .weather-forecast-icon {
   height: 50px;
@@ -80,9 +105,9 @@ a {
 .weather-forecast-temperatures {
   font-size: 14px;
 }
-.weather-forecast-temp-max {
+.weather-forecast-temperature-max {
   font-weight: bold;
 }
-.weather-forecast-temp-min {
+.weather-forecast-temperature-min {
   opacity: 0.6;
 }
